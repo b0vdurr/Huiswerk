@@ -15,7 +15,7 @@ for i in range(len(TOUW_DIAMETERS)):
     if aantal_touwen[i] == 0 or lengte_touwen[i] == 0:
         continue
     else:
-        print(f'{TOUW_DIAMETERS[i]} touw:\t{aantal_touwen[i]} x {lengte_touwen[i]}m = {aantal_touwen[i]*lengte_touwen[i]}')
+        print(f'{TOUW_DIAMETERS[i]} touw:\t{aantal_touwen[i] * lengte_touwen[i]}m x €{TOUW_PRIJZEN[i]} = €{(aantal_touwen[i]*lengte_touwen[i]) * TOUW_PRIJZEN[i]}')
         totaal+=lengte_touwen[i]*aantal_touwen[i]
 print(f'Te betalen:\t\t{totaal}')
 print('*'*41)
