@@ -7,13 +7,14 @@ if IPhone_prijs>Samsung_prijs:
     goedkoopste='Samsung'
 else:
     duurste_prijs=Samsung_prijs
-    duurste='IPhone'
+    duurste='Samsung'
     goedkoopste_prijs=IPhone_prijs
-    goedkoopste='Samsung'
+    goedkoopste='IPhone'
 
 print(f'De {duurste} is het duurst, de telefoon kost: {duurste_prijs} Euro')
 print(f'De {goedkoopste} is het goedkoopst, de telefoon kost: {goedkoopste_prijs} Euro')
-if IPhone_prijs - Samsung_prijs<= 50:
+prijsverschil=IPhone_prijs-Samsung_prijs
+if prijsverschil<= 50:
     advies = 'IPhone'
 else:advies='Samsung'
-print(f'Het advies is dus de {advies} te kopen.')
+print(f'Het advies is dus de {advies} te kopen. Deze is namelijk {abs(prijsverschil)} euro {'duurder' if prijsverschil > 0 else 'goedkooper'} dan de {'IPhone' if advies =='Samsung' else 'Samsung'}')
