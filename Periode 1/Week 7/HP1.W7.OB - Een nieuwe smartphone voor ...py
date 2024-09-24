@@ -1,5 +1,6 @@
 IPhone_prijs=float(input('Voer de prijs van IPhone in: '))
 Samsung_prijs=float(input('Voer de prijs van Samsung in: '))
+
 if IPhone_prijs>Samsung_prijs:
     duurste_prijs=IPhone_prijs
     duurste = 'IPhone'
@@ -13,6 +14,8 @@ else:
 
 print(f'De {duurste} is het duurst, de telefoon kost: {duurste_prijs} Euro')
 print(f'De {goedkoopste} is het goedkoopst, de telefoon kost: {goedkoopste_prijs} Euro')
+if IPhone_prijs > 900 or Samsung_prijs > 900:
+    quit('Het advies is dus geen telefoon te kopen, ze zijn te duur.')
 prijsverschil=IPhone_prijs-Samsung_prijs
 if prijsverschil<= 50:
     advies = 'IPhone'
