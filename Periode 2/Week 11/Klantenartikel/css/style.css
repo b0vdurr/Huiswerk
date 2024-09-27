@@ -1,0 +1,10 @@
+body{
+    background-color:lightblue;
+}
+img{
+    border: 2px solid black;
+    margin: 0 10px 0 10px;
+}
+p{
+    text-align: justify;
+}
