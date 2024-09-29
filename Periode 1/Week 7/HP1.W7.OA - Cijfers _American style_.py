@@ -1,5 +1,9 @@
 while True:
-    cijfer=float(input('Voer je cijfer in: '))
+    try:
+        cijfer=float(input('Voer je cijfer in: '))
+    except ValueError:
+        print('Voer een nummer')
+        continue
     if cijfer > 10 or cijfer < 1:
         print('Voer een correcte cijfer in')
     else: break
