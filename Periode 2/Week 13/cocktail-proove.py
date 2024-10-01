@@ -42,17 +42,16 @@ cocktails=[
     }
 ]
 possible_cocktails=cocktails
+checked_ingridients=[]
 while len(possible_cocktails)>1:
     random_cocktail=possible_cocktails[choice(range(0,len(possible_cocktails)))]
     random_ingridient=random_cocktail['ingridients'][choice(range(0,len(random_cocktail['ingridients'])))]
+    if random_ingridient in checked_ingridients:continue
     while True:
         usr=input(f'Bevat je cocktail {random_ingridient}? (j/n)')
         if usr.lower() in ['j','n']:break
+    checked_ingridients.append(random_ingridient)
     if usr=='j':possible_cocktails=[possible_cocktails[x] for x in range(len(possible_cocktails)) if random_ingridient in possible_cocktails[x]['ingridients']]
     else:possible_cocktails=[possible_cocktails[x] for x in range(len(possible_cocktails)) if random_ingridient not in possible_cocktails[x]['ingridients']]
-print(f'Name: {possible_cocktails['name']}')
-print(f'Price: {possible_cocktails['price']}')
-
-
-
-    
+print(f'Name: {possible_cocktails[0]['name']}')
+print(f'Price: {possible_cocktails[0]['price']}')
