@@ -1,0 +1,5 @@
+alert('Antwoord 3 vragen')
+voornaam=prompt('Voer je voornaam in: ')
+achternaam=prompt('Voer je achternaam in: ')
+leeftijd=prompt('Voer je leeftijd in: ')
+console.log(`${voornaam} ${achternaam} is ${leeftijd} jaars oud`)
