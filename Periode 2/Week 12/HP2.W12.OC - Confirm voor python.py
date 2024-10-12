@@ -8,6 +8,5 @@ def confirm(message):
         else:
             print("Please respond with 'y' or 'n'.")
 
-# Voorbeeld van gebruik
 resultaat = confirm("Weet je het zeker?")
 print("Antwoord:", resultaat)
