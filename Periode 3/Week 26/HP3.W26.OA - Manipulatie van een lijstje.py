@@ -1,3 +1,4 @@
+from random import randint
 lijst=[5,12,19,27,3]
 print(lijst)
 lijst.append(25)
@@ -13,3 +14,5 @@ lijst = []
 print(lijst)
 lijst=[x for x in range(1,6)]
 print(lijst)
+lijst.append(randint(1,10))
+lijst.append(randint(50,100))
