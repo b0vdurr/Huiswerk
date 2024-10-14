@@ -9,3 +9,5 @@ print(f'Het numer {lijst.pop(0)} is verwijderd')
 lijst.insert(0,36)
 print(lijst)
 print(f'Het totaal van de lijst is {sum(lijst)}')
+lijst = []
+print(lijst)
