@@ -18,3 +18,5 @@ lijst+= [randint(1,10),randint(50,100)]
 print(f'Er nu zitten {len(lijst)} elementen in de lijst en het totaal van de lijst is {sum(lijst)}.')
 print(f'De index van de waarde 25 is {lijst.index(25)}')
 print(lijst)
+lijst[0], lijst[-1] = lijst[-1], lijst[0]
+print(lijst)
