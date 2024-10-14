@@ -14,5 +14,4 @@ lijst = []
 print(lijst)
 lijst=[x for x in range(1,6)]
 print(lijst)
-lijst.append(randint(1,10))
-lijst.append(randint(50,100))
+lijst+= [randint(1,10),randint(50,100)]
