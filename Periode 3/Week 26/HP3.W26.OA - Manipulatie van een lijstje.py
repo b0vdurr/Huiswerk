@@ -15,3 +15,4 @@ print(lijst)
 lijst=[x for x in range(1,6)]
 print(lijst)
 lijst+= [randint(1,10),randint(50,100)]
+print(f'Er nu zitten {len(lijst)} elementen in de lijst en het totaal van de lijst is {sum(lijst)}.')
