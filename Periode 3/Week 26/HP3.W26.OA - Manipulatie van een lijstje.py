@@ -11,3 +11,5 @@ print(lijst)
 print(f'Het totaal van de lijst is {sum(lijst)}')
 lijst = []
 print(lijst)
+lijst=[x for x in range(1,6)]
+print(lijst)
