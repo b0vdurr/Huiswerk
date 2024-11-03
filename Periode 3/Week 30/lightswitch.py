@@ -1,13 +1,19 @@
 import tkinter as tk
 window = tk.Tk()
-
-button = tk.Button(text='...', bg="white", fg="black")
+light_on=False
+def switchLight():
+    global light_on
+    if light_on:
+        button.config(text='Switch light on')
+        window.config(bg='black')
+        light_on=False
+        print('Light is off')
+    else:
+        button.config(text='Switch light off')
+        window.config(bg='yellow')
+        light_on=True
+        print('Light is on')
+button = tk.Button(text='Switch light on', bg="white", fg="black",command=switchLight)
 button.pack(pady = 20, padx = 20)
-
-# schijf hier tussen je code
-
-
-
-# schijf hier tussen je code
 
 window.mainloop()
