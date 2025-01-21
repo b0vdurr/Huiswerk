@@ -14,13 +14,18 @@ for(let i=1;i<=30;i++){
     button.style.fontSize='50px'
     container.appendChild(button)
     button.addEventListener('click',function(){
-        color = button.style.backgroundColor
-        if(color == 'green')
-        {
-            button.style.backgroundColor='red'
-        }
-        else{
-            button.style.backgroundColor='green'
-        }
+        color = button.style.backgroundColor='red'
+        button.addEventListener('click',function(){
+            color = button.style.backgroundColor='purple'
+            button.addEventListener('click',function(){
+                color = button.style.backgroundColor='blue'
+                button.addEventListener('click',function(){
+                    color = button.style.backgroundColor='black'
+                    button.addEventListener('click',function(){
+                        container.removeChild(button)
+                    })
+                })
+            })
+        })
     })
 }
