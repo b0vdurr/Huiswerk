@@ -1,0 +1,26 @@
+body{
+	background-color: #f2f2ff;
+}
+
+#puzzle{
+	width: 600px;
+	height: 400px;
+	margin: 40px;
+	border: 4px solid black;
+	position: relative;
+}
+img{
+	position: absolute;
+}
+.topright{
+	right: 0;
+}
+.bottomleft{
+	left: 0;
+	bottom: 0;
+
+}
+.bottomright{
+	bottom: 0;
+	right: 0;
+}
